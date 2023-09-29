@@ -14,8 +14,8 @@ body {
 /* Navigation styles */
 nav {
     background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    color: #333;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -26,13 +26,18 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ff9900;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9900; 
 }
 
 /* Header styles */
 header {
-    background-color: #f4f4f4;
+    background-color: #333;
     padding: 20px 0;
     text-align: center;
     margin-bottom: 20px;
@@ -40,13 +45,17 @@ header {
 
 header h1 {
     font-size: 2em;
+    color: #fff; 
 }
 
 /* Section styles */
 section {
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
 }
 
 section h2 {
@@ -72,6 +81,8 @@ form input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 form input[type="submit"] {
@@ -80,6 +91,11 @@ form input[type="submit"] {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff9900; 
 }
 
 /* Footer styles */
